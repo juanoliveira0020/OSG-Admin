@@ -1,0 +1,44 @@
+.materiais-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.materiais-title {
+  color: #d56cff;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.materiais-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.materiais-card {
+  width: 320px;
+  background: #4c2a6d;
+  padding: 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.materiais-card img {
+  width: 40px;
+}
+
+.materiais-card span {
+  color: white;
+  font-size: 16px;
+}
+
+.materiais-card:hover {
+  background: #6a3c94;
+  transform: translateY(-2px);
+}

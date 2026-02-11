@@ -1,0 +1,97 @@
+.mensagens-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mensagens-title {
+  color: #c44cff;
+  font-size: 32px;
+}
+
+.mensagens-box {
+  background: #4c2a6d;
+  padding: 18px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  color: white;
+}
+
+.mensagens-search {
+  display: flex;
+  gap: 10px;
+}
+
+.mensagens-search input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #4c2a6d;
+  color: white;
+}
+
+.mensagens-search button {
+  background: #b400ff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.mensagens-user-card {
+  width: 350px;
+  background: linear-gradient(90deg, #ff00ff, #6a00ff);
+  padding: 4px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mensagens-user-card div {
+  background: #3a1f52;
+  border-radius: 12px;
+  padding: 15px;
+  color: white;
+  flex: 1;
+}
+
+.mensagens-user-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.mensagens-subtitle {
+  color: #c44cff;
+}
+
+.mensagens-list {
+  width: 350px;
+  background: #6a3c94;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.mensagem-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px;
+  color: white;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+}
+
+.mensagem-item:last-child {
+  border-bottom: none;
+}
+
+.mensagem-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

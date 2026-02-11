@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #1c1026;
+}
+
+/* CONTAINER */
+.admin-container {
+  min-height: 100vh;
+  color: white;
+}
+
+/* HEADER */
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #2b143f;
+}
+
+.admin-header h1 {
+  font-size: 18px;
+  color: #c084fc;
+}
+
+.admin-search {
+  width: 250px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.admin-user {
+  font-size: 22px;
+}
+
+/* CONTENT */
+.admin-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* CARD PRINCIPAL */
+.adicionar-card {
+  background: linear-gradient(180deg, #3b1a57, #2a123f);
+  padding: 35px;
+  width: 420px;
+  border-radius: 20px;
+}
+
+/* TITLE */
+.adicionar-title {
+  text-align: center;
+  color: #a855f7;
+  margin-bottom: 25px;
+}
+
+/* SELECTS */
+.adicionar-select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  border: none;
+  background: #b04ae2;
+  color: white;
+}
+
+/* SUBCARD */
+.submateria-card {
+  background: #4a2a66;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+.submateria-title {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+/* INPUT */
+.submateria-card input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+/* BOTÃO */
+.adicionar-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 22px;
+  border: none;
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}

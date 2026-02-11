@@ -1,0 +1,85 @@
+.banir-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.banir-title {
+  color: #d56cff;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.banir-input {
+  width: 320px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #4c2a6d;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.banir-subtitle {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.banir-card {
+  width: 320px;
+  background: linear-gradient(90deg, #ff00ff, #6a00ff);
+  padding: 3px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banir-info {
+  background: #3a1f52;
+  border-radius: 12px;
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.banir-name {
+  font-weight: bold;
+  color: white;
+}
+
+.banir-email {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.banir-id {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.banir-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: auto 10px;
+}
+
+.banir-btn {
+  width: 320px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #b400ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.banir-btn:hover {
+  background: #d000ff;
+}

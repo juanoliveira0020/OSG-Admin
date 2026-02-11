@@ -1,0 +1,93 @@
+.admin-container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1b0b2e, #2a0f45);
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.admin-header h1 {
+  color: #c77dff;
+}
+
+.admin-search input {
+  background: #3a1b5c;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  outline: none;
+}
+
+.admin-user {
+  background: #7b2cbf;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+/* CONTEÚDO */
+.admin-content {
+  padding: 20px 40px;
+}
+
+.admin-banner {
+  background: #4a3f6b;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.admin-banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* AÇÕES */
+.admin-title {
+  margin: 30px 0 15px;
+  text-align: center;
+  color: #c77dff;
+}
+
+.admin-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-action {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #3a1b5c;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-action:hover {
+  background: #5a189a;
+}
+
+.admin-action img {
+  width: 32px;
+}
+
+.admin-action.danger {
+  background: #4b1125;
+}
+
+.admin-action.danger:hover {
+  background: #7a1f3d;
+}
