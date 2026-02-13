@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./visualizar_conversas.css";
 
-import user from "../../assets/image/user.png";
-import contato1 from "../../assets/image/contato1.png";
-import contato2 from "../../assets/image/contato2.png";
-import contato3 from "../../assets/image/contato3.png";
+import user from "../../assets/icons/usericon.png";
+import contato1 from "../../assets/icons/usericon.png";
+import contato2 from "../../assets/icons/usericon.png";
+import contato3 from "../../assets/icons/usericon.png";
 
 export const VisualizarMensagens = () => {
   const navigate = useNavigate();

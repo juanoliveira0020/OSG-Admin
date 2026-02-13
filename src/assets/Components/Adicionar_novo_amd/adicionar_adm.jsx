@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./adicionarAdmin.css";
 
-import avatar from "../../assets/image/user.png";
+import avatar from "../../assets/icons/usericon.png";
 
 export const AdicionarAdmin = () => {
   const navigate = useNavigate();

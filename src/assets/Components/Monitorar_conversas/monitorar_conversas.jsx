@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./monitorar_coversas.css";
 
-import addPerg from "../../assets/icons/add-question.png";
-import editPerg from "../../assets/icons/edit-question.png";
-import removePerg from "../../assets/icons/remove-question.png";
+import addPerg from "../../assets/icons/usericon.png";
+import editPerg from "../../assets/icons/usericon.png";
+import removePerg from "../../assets/icons/usericon.png";
 
 export const GerenciarPerguntas = () => {
   const navigate = useNavigate();

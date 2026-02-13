@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
 
-import avatar from "../../assets/image/user.png";
+import avatar from "../../assets/icons/usericon.png";
 
-export const NovoAdmin = () => {
+export const login = () => {
   const navigate = useNavigate();
 
   return (

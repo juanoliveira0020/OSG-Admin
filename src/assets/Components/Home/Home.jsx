@@ -2,14 +2,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
 
-import banner from "../../assets/image/study.png"; // imagem central
-import monitor from "../../assets/icons/monitor.png";
-import perguntas from "../../assets/icons/questions.png";
-import materiais from "../../assets/icons/materials.png";
-import banir from "../../assets/icons/ban.png";
-import admin from "../../assets/icons/admin.png";
+import banner from "../../assets/icons/usericon.png";// imagem central
+import monitor from "../../assets/icons/usericon.png";
+import perguntas from "../../assets/icons/usericon.png";
+import materiais from "../../assets/icons/usericon.png";
+import banir from "../../assets/icons/usericon.png";
+import admin from "../../assets/icons/usericon.png";
 
-export const home = () => {
+export const Home = () => {
   const navigate = useNavigate();
 
   return (
