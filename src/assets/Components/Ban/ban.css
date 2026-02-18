@@ -1,85 +1,166 @@
-.banir-page {
+/* RESET + TELA CHEIA */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* FUNDO */
+.admin-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #1a0727, #2b0f3f);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  color: #fff;
 }
 
-.banir-title {
-  color: #d56cff;
-  font-size: 28px;
-  margin-top: 20px;
-}
-
-.banir-input {
-  width: 320px;
-  padding: 14px;
-  border-radius: 10px;
-  border: none;
-  background: #4c2a6d;
-  color: white;
-  text-align: center;
-  font-size: 16px;
-}
-
-.banir-subtitle {
-  color: #ccc;
-  font-size: 14px;
-}
-
-.banir-card {
-  width: 320px;
-  background: linear-gradient(90deg, #ff00ff, #6a00ff);
-  padding: 3px;
-  border-radius: 15px;
+/* HEADER */
+.admin-header {
+  height: 80px;
+  background: #2b0f3f;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 0 24px;
 }
 
-.banir-info {
-  background: #3a1f52;
-  border-radius: 12px;
-  padding: 15px;
+.admin-header h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #d48cff;
+}
+
+/* PESQUISA TOPO */
+.admin-search input {
+  width: 260px;
+  height: 32px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 0 14px;
+  background: #3a1a52;
+  color: #fff;
+}
+
+/* USUÁRIO */
+.admin-user {
+  width: 32px;
+  height: 32px;
+  background: #7b3fe4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTEÚDO */
+.admin-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: center;
+  padding-top: 32px;
+}
+
+/* TÍTULO */
+.banir-title {
+  font-size: 32px;
+  color: #a44bff;
+  margin-bottom: 24px;
+}
+
+/* CARD INPUT */
+.banir-input-card {
+  width: 360px;
+  height: 64px;
+  background: #3b2f45;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e6d6ff;
+  margin-bottom: 16px;
+}
+
+/* BUSCA ID */
+.banir-search {
+  width: 280px;
+  height: 36px;
+  background: #2a1a36;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.banir-search input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.banir-search-icon {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* CARD USUÁRIO */
+.banir-card {
+  width: 360px;
+  background: #8f2eff;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+/* INFO */
+.banir-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
 }
 
 .banir-name {
-  font-weight: bold;
-  color: white;
-}
-
-.banir-email {
-  font-size: 13px;
-  color: #ccc;
+  font-weight: 500;
 }
 
 .banir-id {
   font-size: 12px;
-  color: #aaa;
+  opacity: 0.9;
 }
 
+/* AVATAR */
 .banir-avatar {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  margin: auto 10px;
+  border: 3px solid #38d9ff;
+  object-fit: cover;
 }
 
+/* BOTÃO */
 .banir-btn {
-  width: 320px;
-  padding: 14px;
+  width: 180px;
+  height: 34px;
+  border-radius: 18px;
   border: none;
-  border-radius: 12px;
-  background: #b400ff;
-  color: white;
-  font-size: 16px;
+  background: #a44bff;
+  color: #fff;
   cursor: pointer;
-  transition: 0.3s;
+  font-size: 14px;
 }
 
 .banir-btn:hover {
-  background: #d000ff;
+  background: #b865ff;
 }

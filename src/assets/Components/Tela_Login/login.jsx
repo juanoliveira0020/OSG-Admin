@@ -1,7 +1,7 @@
 import React from "react";
 import "./login.css";
 
-import logo from "../../icons/usericon.png" // use sua logo real
+import logo from "../../icons/icon_Osg.png" // use sua logo real
 
 export const Tela_login = () => {
   return (

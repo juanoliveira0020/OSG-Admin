@@ -1,16 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./ban.css";
 
-import avatar from "../../icons/usericon.png" // foto do usuário
+import avatar from "../../icons/usericon.png";
 
 export const BanirUsuario = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="admin-container">
 
-      {/* TOPO */}
+      {/* HEADER */}
       <header className="admin-header">
         <h1>Online study group</h1>
 
@@ -18,9 +15,7 @@ export const BanirUsuario = () => {
           <input type="text" placeholder="Pesquisar..." />
         </div>
 
-        <div className="admin-user">
-          <span>👤</span>
-        </div>
+        <div className="admin-user">👤</div>
       </header>
 
       {/* CONTEÚDO */}
@@ -28,32 +23,34 @@ export const BanirUsuario = () => {
 
         <h2 className="banir-title">Banir Usuario</h2>
 
-        <input
-          className="banir-input"
-          type="text"
-          placeholder="Insira o ID do usuario"
-        />
+        {/* CARD INPUT */}
+        <div className="banir-input-card">
+          Insira o ID do usuario
+        </div>
 
-        <span className="banir-subtitle">Encontrado</span>
+        {/* INPUT BUSCA */}
+        <div className="banir-search">
+          <input type="text" value="40028922" readOnly />
+          <span className="banir-search-icon">🔍</span>
+        </div>
 
+        {/* CARD USUÁRIO */}
         <div className="banir-card">
           <div className="banir-info">
-            <span className="banir-name">nome</span>
-            <span className="banir-email">
-              fulano_do_chaos no exemplo
+            <span className="banir-name">
+              nome: Juninho do desce e quebra
             </span>
-            <span className="banir-id">id: 445889023</span>
+            <span className="banir-id">
+              id:40028922
+            </span>
           </div>
 
           <img src={avatar} alt="Usuário" className="banir-avatar" />
         </div>
 
-        <button className="banir-btn">
-          Confirmar
-        </button>
+        <button className="banir-btn">Confirmar</button>
 
       </main>
-
     </div>
   );
 };

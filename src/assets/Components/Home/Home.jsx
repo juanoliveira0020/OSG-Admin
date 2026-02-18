@@ -2,12 +2,12 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 
-import banner from "../../icons/usericon.png";// imagem central
-import monitor from "../../icons/usericon.png"
-import perguntas from "../../icons/usericon.png";
-import materiais from "../../icons/usericon.png";
-import banir from "../../icons/usericon.png";
-import admin from "../../icons/usericon.png"
+import banner from "../../icons/icon_home.png";
+import monitor from "../../icons/icon_monitoramento.png";
+import perguntas from "../../icons/icon_adicionarPergunta.png";
+import materiais from "../../icons/icon_adicionarSub.png";
+import banir from "../../icons/icon_monitoramento.png";
+import admin from "../../icons/icon_novoAdm.png";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -68,7 +68,6 @@ export const Home = () => {
 
         </div>
       </main>
-
     </div>
   );
 };

@@ -11,11 +11,9 @@ export const Adicionar_sub = () => {
       <header className="admin-header">
         <h1>Online study group</h1>
 
-        <input
-          className="admin-search"
-          type="text"
-          placeholder="Pesquisar..."
-        />
+        <div className="admin-search">
+          <input type="text" placeholder="Pesquisar..." />
+        </div>
 
         <div className="admin-user">👤</div>
       </header>
@@ -39,7 +37,6 @@ export const Adicionar_sub = () => {
 
             <input
               type="text"
-              placeholder=""
               value={submateria}
               onChange={(e) => setSubmateria(e.target.value)}
             />

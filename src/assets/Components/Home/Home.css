@@ -1,143 +1,136 @@
-.admin-container {
-  height: 100vh;
-  background: linear-gradient(180deg, #1b0b2e, #2a0f45);
-  color: #fff;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  width: 100vw;  /* tamanho desktop */
-  margin: 0 auto;
-  padding: 20px 30px;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* HEADER */
+/* FUNDO GERAL */
+.admin-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #1a0727, #2b0f3f);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* TOPO */
 .admin-header {
+  height: 60px;
+  background: #2b0f3f;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #2e1c43;
-  border-radius: 15px;
-  padding: 12px 20px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
+  padding: 0 24px;
 }
 
-.admin-header .title {
-  color: #ad68ff;
+.admin-header h1 {
+  font-size: 18px;
   font-weight: 500;
-  font-size: 16px;
-  user-select: none;
+  color: #d48cff;
 }
 
-.admin-search {
-  flex: 1;
-  margin: 0 20px;
-  position: relative;
-}
-
+/* PESQUISA */
 .admin-search input {
-  width: 100%;
-  background: #3a1b5c;
+  width: 260px;
+  height: 32px;
+  border-radius: 20px;
   border: none;
-  border-radius: 15px;
-  padding: 8px 40px 8px 16px;
-  color: white;
-  font-size: 14px;
   outline: none;
-  box-sizing: border-box;
+  padding: 0 14px;
+  background: #3a1a52;
+  color: #fff;
 }
 
-.admin-search svg {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: #7b2cbf;
-  width: 18px;
-  height: 18px;
-  pointer-events: none;
+.admin-search input::placeholder {
+  color: #caa6e6;
 }
 
+/* USUÁRIO */
 .admin-user {
-  background: #7b2cbf;
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
+  background: #7b3fe4;
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-}
-
-/* BANNER */
-.admin-banner {
-  background: #4a3f6b;
-  border-radius: 15px;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 25px;
-  box-sizing: border-box;
-  height: 250px;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+/* CONTEÚDO */
+.admin-content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+
+/* BANNER */
+.admin-banner {
+  width: 100%;
+  background: #4a256a;
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .admin-banner img {
-  max-width: 80%;
-  height: auto;
-  user-select: none;
+  max-width: 530px;
+  width: 100%;
 }
 
-/* TÍTULO DE AÇÕES */
+/* TÍTULO */
 .admin-title {
-  margin: 0 0 20px;
   text-align: center;
-  color: #ad68ff;
-  font-weight: 600;
-  font-size: 14px;
-  user-select: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #d48cff;
 }
 
 /* AÇÕES */
 .admin-actions {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px;
 }
 
+/* ITEM */
 .admin-action {
   display: flex;
   align-items: center;
-  gap: 15px;
-  background: #3a1b5c;
-  padding: 15px 20px;
-  border-radius: 12px;
+  gap: 14px;
+  background: #3a1a52;
+  padding: 12px 16px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  user-select: none;
+  transition: background 0.2s ease;
 }
 
 .admin-action:hover {
-  background: #5a189a;
+  background: #4c2370;
 }
 
 .admin-action img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
+  width: 28px;
+  height: 28px;
 }
 
+.admin-action span {
+  font-size: 15px;
+}
+
+/* AÇÃO PERIGOSA */
 .admin-action.danger {
-  background: #4b1125;
+  background: #4b1230;
 }
 
 .admin-action.danger:hover {
-  background: #7a1f3d;
-}
-
-.admin-action .text {
-  font-size: 14px;
-  color: #fff;
-  font-weight: 500;
+  background: #6a1a42;
 }
