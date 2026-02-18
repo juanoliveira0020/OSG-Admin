@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./remover_perguntas.css";
+import "./excluir_perguntas.css";
 
 export const RemoverPerguntas = () => {
   const [perguntaSelecionada, setPerguntaSelecionada] = useState(null);

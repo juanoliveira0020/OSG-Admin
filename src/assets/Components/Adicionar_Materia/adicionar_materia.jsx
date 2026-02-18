@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./adicionar_materia.css";
+import "./adicionar_materias.css";
 
 export const AdicionarMateria = () => {
   const navigate = useNavigate();

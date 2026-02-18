@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./gerenciar_Perguntas.css";
 
-import addPerg from "../../assets/icons/usericon.png";
-import editPerg from "../../assets/icons/usericon.png";
-import removePerg from "../../assets/icons/usericon.png";
+import addPerg from "../../icons/usericon.png";
+import editPerg from "../../icons/usericon.png";
+import removePerg from "../../icons/usericon.png";
 
 export const GerenciarPerguntas = () => {
   const navigate = useNavigate();

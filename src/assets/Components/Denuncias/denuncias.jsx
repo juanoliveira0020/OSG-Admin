@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./denuncias.css";
 
-import user1 from "../../assets/icons/usericon.png";
-import user2 from "../../assets/icons/usericon.png";
-import user3 from "../../assets/icons/usericon.png";
+import user1 from "../../icons/usericon.png";
+import user2 from "../../icons/usericon.png";
+import user3 from "../../icons/usericon.png"
 
 export const Denuncias = () => {
   const navigate = useNavigate();

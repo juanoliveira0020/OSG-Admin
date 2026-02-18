@@ -1,76 +1,113 @@
-.novo-admin-page {
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* FUNDO */
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #1a052d, #2b0a4a);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.novo-admin-card {
-  width: 520px;
-  background: #2b1242;
-  border-radius: 18px;
-  padding: 30px;
+/* CARD CENTRAL */
+.login-card {
+  width: 900px;
+  height: 420px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 25px;
   display: flex;
-  gap: 30px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
 }
 
-.novo-admin-avatar {
+/* LADO ESQUERDO */
+.login-left {
+  flex: 1;
+  color: #4cc9f0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
 }
 
-.novo-admin-avatar img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+.login-left img {
+  width: 160px;
+  margin-bottom: 20px;
 }
 
-.novo-admin-avatar span {
-  font-size: 12px;
-  color: #d56cff;
-  cursor: pointer;
+.login-left h2 {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.novo-admin-form {
+/* LADO DIREITO */
+.login-right {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  gap: 18px;
 }
 
-.novo-admin-form input {
-  padding: 12px;
-  border-radius: 10px;
+/* INPUTS */
+.login-right input {
+  height: 46px;
+  border-radius: 25px;
   border: none;
-  background: #4c2a6d;
-  color: white;
+  padding: 0 18px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
 }
 
-.novo-admin-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 15px;
+.login-right input::placeholder {
+  color: #9fdcff;
 }
 
-.btn-cancel {
-  background: transparent;
+/* LINKS */
+.login-links {
+  text-align: right;
+}
+
+.login-links a {
+  font-size: 12px;
+  color: #4cc9f0;
+  text-decoration: none;
+}
+
+/* BOTÃO */
+.login-btn {
+  height: 42px;
+  width: 120px;
+  align-self: flex-end;
+  border-radius: 20px;
   border: none;
-  color: #aaa;
+  background: linear-gradient(135deg, #4cc9f0, #7209b7);
+  color: #fff;
   cursor: pointer;
-}
-
-.btn-save {
-  background: #b400ff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
+  font-weight: 500;
   transition: 0.3s;
 }
 
-.btn-save:hover {
-  background: #d000ff;
+.login-btn:hover {
+  opacity: 0.85;
+}
+
+/* CADASTRO */
+.login-register {
+  font-size: 12px;
+  color: #9fdcff;
+}
+
+.login-register span {
+  color: #4cc9f0;
+  cursor: pointer;
 }

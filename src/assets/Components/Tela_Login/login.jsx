@@ -1,60 +1,45 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./login.css";
 
-import avatar from "../../assets/icons/usericon.png";
+import logo from "../../icons/usericon.png" // use sua logo real
 
-export const login = () => {
-  const navigate = useNavigate();
-
+export const Tela_login = () => {
   return (
-    <div className="admin-container">
+    <div className="login-container">
+      <div className="login-card">
 
-      {/* TOPO */}
-      <header className="admin-header">
-        <h1>Online study group</h1>
-
-        <div className="admin-search">
-          <input type="text" placeholder="Pesquisar..." />
+        {/* LOGO / LADO ESQUERDO */}
+        <div className="login-left">
+          <img src={logo} alt="Online Study Group" />
+          <h2>Faça login ADM!</h2>
         </div>
 
-        <div className="admin-user">
-          <span>👤</span>
-        </div>
-      </header>
+        {/* FORMULÁRIO */}
+        <div className="login-right">
+          <input
+            type="text"
+            placeholder="Gmail ou telefone"
+          />
 
-      {/* CONTEÚDO */}
-      <main className="admin-content novo-admin-page">
+          <input
+            type="password"
+            placeholder="Senha"
+          />
 
-        <div className="novo-admin-card">
-
-          <div className="novo-admin-avatar">
-            <img src={avatar} alt="Avatar" />
-            <span>Adicionar foto</span>
+          <div className="login-links">
+            <a href="#">Esqueceu sua senha?</a>
           </div>
 
-          <div className="novo-admin-form">
+          <button className="login-btn">
+            Entrar
+          </button>
 
-            <input type="text" placeholder="Nome do admin" />
-
-            <input type="email" placeholder="Email" />
-
-            <div className="novo-admin-actions">
-              <button className="btn-cancel" onClick={() => navigate(-1)}>
-                Cancelar
-              </button>
-
-              <button className="btn-save">
-                Salvar
-              </button>
-            </div>
-
-          </div>
-
+          <p className="login-register">
+            Não tem conta? <span>Cadastre-se</span>
+          </p>
         </div>
 
-      </main>
-
+      </div>
     </div>
   );
 };

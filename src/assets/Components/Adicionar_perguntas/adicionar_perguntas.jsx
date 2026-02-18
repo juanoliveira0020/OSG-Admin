@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./adicionar_Perguntas.css";
+import "./adicionar_perguntas.css";
 
 export const AdicionarPergunta = () => {
   const navigate = useNavigate();

@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./ban.css";
 
-import avatar from "../../assets/icons/usericon.png"; // foto do usuário
+import avatar from "../../icons/usericon.png" // foto do usuário
 
 export const BanirUsuario = () => {
   const navigate = useNavigate();

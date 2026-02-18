@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./adicionarAdmin.css";
+import "./adicionar_adm.css";
 
-import avatar from "../../assets/icons/usericon.png";
+import avatar from "../../icons/usericon.png";
 
 export const AdicionarAdmin = () => {
   const navigate = useNavigate();

@@ -1,53 +1,29 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { adicionar_mat } from "./assets/Components/Adicionar_mat";
-import { AdicionarMateria } from "./assets/Components/Adicionar_Materia";
-import { AdicionarAdmin } from "./assets/Components/Adicionar_novo_amd";
-import { AdicionarPergunta } from "./assets/Components/Adicionar_perguntas";
-import { BanirUsuario } from "./assets/Components/Ban";
-import { Denuncias } from "./assets/Components/Denuncias";
-import { EditarPerguntas } from "./assets/Components/Editar_perguntas";
-import { RemoverMaterias } from "./assets/Components/excluir_materias";
-import { RemoverPerguntas } from "./assets/Components/Excluir_perguntas";
-import { GerenciarMateriais } from "./assets/Components/Gerenciar_Materias";
-import { GerenciarPerguntas } from "./assets/Components/Gerenciar_Perguntas";
-import { Home } from "./assets/Components/Home";
-import { login } from "./assets/Components/Tela_Login";
-import { VisualizarMensagens } from "./assets/Components/Visualizar_conversas";
+import { Adicionar_sub } from "./assets/Components/Adicionar_sub/Adicionar_sub";
+import { Adicionar_materia } from "./assets/Components/Adicionar_Materia/adicionar_materia";
+import { AdicionarAdmin } from "./assets/Components/Adicionar_novo_amd/adicionar_adm";
+import { AdicionarPergunta } from "./assets/Components/Adicionar_perguntas/adicionar_perguntas";
+import { BanirUsuario } from "./assets/Components/Ban/ban";
+import { Denuncias } from "./assets/Components/Denuncias/denuncias";
+import { EditarPerguntas } from "./assets/Components/Editar_perguntas/editar_perguntas";
+import { RemoverMaterias } from "./assets/Components/excluir_materias/excluir_materias";
+import { RemoverPerguntas } from "./assets/Components/Excluir_perguntas/excluir_perguntas";
+import { GerenciarMateriais } from "./assets/Components/Gerenciar_Materias/gerenciar_materias";
+import { GerenciarPerguntas } from "./assets/Components/Gerenciar_Perguntas/gerenciar_Perguntas";
+import { Home } from "./assets/Components/Home/Home";
+import { Tela_login } from "./assets/Components/Tela_Login/login";
+import { VisualizarMensagens } from "./assets/Components/Visualizar_conversas/visualizar_conversas";
 
 function App() {
   return (
-    <Router>
-      <Routes>
+   <Router>
+  <Routes>
+    <Route path="/Home" element={<Home />} />
+  </Routes>
+</Router>
 
-        {/* Home */}
-        <Route path="/home" element={<Home />} />
 
-        {/* Login */}
-        <Route path="/login" element={<login />} />
-
-        {/* Matérias */}
-        <Route path="/adicionar-materia" element={<AdicionarMateria />} />
-        <Route path="/adicionar-mat" element={<adicionar_mat />} />
-        <Route path="/remover-materias" element={<RemoverMaterias />} />
-        <Route path="/gerenciar-materiais" element={<GerenciarMateriais />} />
-
-        {/* Perguntas */}
-        <Route path="/adicionar-pergunta" element={<AdicionarPergunta />} />
-        <Route path="/editar-perguntas" element={<EditarPerguntas />} />
-        <Route path="/remover-perguntas" element={<RemoverPerguntas />} />
-        <Route path="/gerenciar-perguntas" element={<GerenciarPerguntas />} />
-
-        {/* Administração */}
-        <Route path="/adicionar-admin" element={<AdicionarAdmin />} />
-        <Route path="/banir-usuario" element={<BanirUsuario />} />
-        <Route path="/denuncias" element={<Denuncias />} />
-
-        {/* Mensagens */}
-        <Route path="/visualizar-mensagens" element={<VisualizarMensagens />} />
-
-      </Routes>
-    </Router>
   );
 }
 

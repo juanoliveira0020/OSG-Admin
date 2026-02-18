@@ -1,13 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./home.css";
+import "./Home.css";
 
-import banner from "../../assets/icons/usericon.png";// imagem central
-import monitor from "../../assets/icons/usericon.png";
-import perguntas from "../../assets/icons/usericon.png";
-import materiais from "../../assets/icons/usericon.png";
-import banir from "../../assets/icons/usericon.png";
-import admin from "../../assets/icons/usericon.png";
+import banner from "../../icons/usericon.png";// imagem central
+import monitor from "../../icons/usericon.png"
+import perguntas from "../../icons/usericon.png";
+import materiais from "../../icons/usericon.png";
+import banir from "../../icons/usericon.png";
+import admin from "../../icons/usericon.png"
 
 export const Home = () => {
   const navigate = useNavigate();
