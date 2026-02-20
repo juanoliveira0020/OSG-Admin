@@ -29,7 +29,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #ff00ff, #6a00ff);
+  background: linear-gradient(90deg, #ff00ff, #6908aa);
   padding: 4px;
   border-radius: 12px;
 }
@@ -60,7 +60,7 @@
   padding: 12px;
   border-radius: 20px;
   border: none;
-  background: linear-gradient(90deg, #ff00ff, #6a00ff);
+  background: linear-gradient(90deg, #ff00ff, #8c00ff);
   color: white;
   cursor: pointer;
 }

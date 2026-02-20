@@ -6,8 +6,8 @@
 }
 
 .add-materia-title {
-  font-size: 34px;
-  color: #c44cff;
+  font-size: 45px;
+  color: #7626df;
 }
 
 .materia-select {
@@ -15,7 +15,7 @@
   padding: 14px;
   border-radius: 20px;
   border: none;
-  background: linear-gradient(90deg, #ff00ff, #6a00ff);
+  background: linear-gradient(90deg, #5e148f, #350053);
   color: white;
   text-align: center;
 }
@@ -24,26 +24,27 @@
   width: 400px;
   background: #4c2a6d;
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 20px;
   text-align: center;
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .materia-card input {
-  padding: 12px;
+  padding: 15px;
   border-radius: 20px;
   border: none;
-  background: #ddd;
+  background: #644581;
+  
 }
 
 .materia-btn {
   padding: 12px;
   border-radius: 20px;
   border: none;
-  background: linear-gradient(90deg, #ff00ff, #6a00ff);
+  background: linear-gradient(90deg, #5e148f, #350053);
   color: white;
   cursor: pointer;
 }

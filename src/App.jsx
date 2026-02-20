@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { BanirUsuario } from "./assets/Components/Ban/ban";
+import { RemoverMaterias } from "./assets/Components/excluir_materias/excluir_materias";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<BanirUsuario />} />
+        <Route path="/" element={<RemoverMaterias/>} />
       </Routes>
     </Router>
   );

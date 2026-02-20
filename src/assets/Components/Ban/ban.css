@@ -46,8 +46,8 @@ html, body, #root {
 
 /* USUÁRIO */
 .admin-user {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   background: #7b3fe4;
   border-radius: 50%;
   display: flex;
@@ -61,12 +61,12 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 32px;
+  padding-top: 40px;
 }
 
 /* TÍTULO */
 .banir-title {
-  font-size: 32px;
+  font-size: 45px;
   color: #a44bff;
   margin-bottom: 24px;
 }
@@ -74,8 +74,8 @@ html, body, #root {
 /* CARD INPUT */
 .banir-input-card {
   width: 360px;
-  height: 64px;
-  background: #3b2f45;
+  height: 70px;
+  background: #8b43c7;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -87,7 +87,7 @@ html, body, #root {
 /* BUSCA ID */
 .banir-search {
   width: 280px;
-  height: 36px;
+  height: 45px;
   background: #2a1a36;
   border-radius: 18px;
   display: flex;
@@ -103,11 +103,11 @@ html, body, #root {
   border: none;
   outline: none;
   color: #fff;
-  font-size: 13px;
+  font-size: 17px;
 }
 
 .banir-search-icon {
-  font-size: 14px;
+  font-size: 20px;
   opacity: 0.8;
 }
 
@@ -115,8 +115,8 @@ html, body, #root {
 .banir-card {
   width: 360px;
   background: #8f2eff;
-  border-radius: 14px;
-  padding: 14px;
+  border-radius: 18px;
+  padding: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,8 +127,8 @@ html, body, #root {
 .banir-info {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  font-size: 13px;
+  gap: 8px;
+  font-size: 17px;
 }
 
 .banir-name {
@@ -136,7 +136,7 @@ html, body, #root {
 }
 
 .banir-id {
-  font-size: 12px;
+  font-size: 18px;
   opacity: 0.9;
 }
 
@@ -145,22 +145,22 @@ html, body, #root {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  border: 3px solid #38d9ff;
+  border: 3px solid #f208fa;
   object-fit: cover;
 }
 
 /* BOTÃO */
 .banir-btn {
   width: 180px;
-  height: 34px;
-  border-radius: 18px;
+  height: 45px;
+  border-radius: 20px;
   border: none;
   background: #a44bff;
   color: #fff;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .banir-btn:hover {
-  background: #b865ff;
+  background: #9c5cd4;
 }
