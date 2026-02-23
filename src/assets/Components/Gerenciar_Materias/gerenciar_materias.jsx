@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./gerenciar_materias.css";
 
-import addMat from "../../icons/usericon.png";
-import addSub from "../../icons/usericon.png";
-import removeMat from "../../icons/usericon.png";
+import addMat from "../../icons/icon_gerenciarMaterias.png";
+import addSub from "../../icons/icon_adicionarSub.png";
+import removeMat from "../../icons/icon_excluirPergunta.png";
 
 export const GerenciarMateriais = () => {
   const navigate = useNavigate();

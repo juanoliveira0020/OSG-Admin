@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { RemoverMaterias } from "./assets/Components/excluir_materias/excluir_materias";
+import { GerenciarMateriais } from "./assets/Components/Gerenciar_Materias/gerenciar_materias";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<RemoverMaterias/>} />
+        <Route path="/" element={<GerenciarMateriais/>} />
       </Routes>
     </Router>
   );
