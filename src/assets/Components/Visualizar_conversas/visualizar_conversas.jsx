@@ -1,87 +1,79 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./visualizar_conversas.css";
 
 import user from "../../icons/usericon.png";
 import contato1 from "../../icons/usericon.png";
 import contato2 from "../../icons/usericon.png";
-
-
+import contato3 from "../../icons/usericon.png";
 
 export const VisualizarMensagens = () => {
-  const navigate = useNavigate();
-
   const [id, setId] = useState("40028922");
 
   return (
-    <div className="admin-container">
+    <div className="page">
 
       {/* HEADER */}
-      <header className="admin-header">
-        <h1>Online study group</h1>
+      <header className="header">
+        <div className="logo">Online study group</div>
 
-        <div className="admin-search">
-          <input type="text" placeholder="Pesquisar..." />
+        <div className="search">
+          <span>🏠</span>
+          <input placeholder="Pesquisar..." />
+          <span>🔍</span>
         </div>
 
-        <div className="admin-user">
-          <span>👤</span>
-        </div>
+        <div className="profile">👤</div>
       </header>
 
-      {/* CONTEÚDO */}
-      <main className="admin-content mensagens-page">
+      {/* CONTEUDO */}
+      <main className="main">
 
-        <h2 className="mensagens-title">Visualizar Mensagens</h2>
+        <h1 className="title">Visualizar Mensagens</h1>
 
-        {/* INSTRUÇÃO */}
-        <div className="mensagens-box">
+        <div className="box">
           Insira o ID do usuario para ver suas mensagens
         </div>
 
-        {/* BUSCA */}
-        <div className="mensagens-search">
+        <div className="search-id">
           <input
             value={id}
             onChange={(e) => setId(e.target.value)}
           />
-          <button>🔍</button>
+          <button>🔎</button>
         </div>
 
-        {/* CARD USUÁRIO */}
-        <div className="mensagens-user-card">
+        <div className="user-card">
           <div>
             <p>nome: Juninho do desce e quebra</p>
-            <p>id: {id}</p>
+            <p>id:{id}</p>
           </div>
-
-          <img src={user} alt="usuario" />
+          <img src={user} alt="" />
         </div>
 
-        {/* LISTA DM */}
-        <h3 className="mensagens-subtitle">Interações na DM</h3>
+        <h3 className="subtitle">Interações na DM</h3>
 
-        <div className="mensagens-list">
-
-          <div className="mensagem-item">
+        <div className="list">
+          <div className="item">
             <img src={contato1} alt="" />
             <span>Makauli</span>
           </div>
 
-          <div className="mensagem-item">
+          <div className="divider"></div>
+
+          <div className="item">
             <img src={contato2} alt="" />
             <span>Mc Pozinho</span>
           </div>
 
-          <div className="mensagem-item">
-            <img src={contato3} alt="" />
-            <span>Mc Pozinho</span>
-          </div>
+          <div className="divider"></div>
 
+          <div className="item">
+            <img src={contato3} alt="" />
+            <span>Mr Pozinho</span>
+          </div>
         </div>
 
       </main>
-
     </div>
   );
 };

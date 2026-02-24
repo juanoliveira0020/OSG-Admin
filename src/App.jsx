@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { GerenciarMateriais } from "./assets/Components/Gerenciar_Materias/gerenciar_materias";
+import { VisualizarMensagens } from "./assets/Components/Visualizar_conversas/visualizar_conversas";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<GerenciarMateriais/>} />
+        <Route path="/" element={<VisualizarMensagens/>} />
       </Routes>
     </Router>
   );
