@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.profile-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #3a0d52, #12051c);
+  color: white;
+}
+
+/* FUNDO GRADIENTE SUPERIOR */
+
+.profile-top-bg {
+  height: 160px;
+  background: linear-gradient(135deg, #a855f7, #6a1fb5, #3a0d52);
+  position: relative;
+}
+
+/* BOTÃO VOLTAR */
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0,0,0,0.35);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+
+/* HEADER PERFIL */
+
+.profile-header {
+  margin-top: -70px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 30px;
+  z-index: 0;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #a855f7;
+  background: #2a0d3f;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* USER INFO */
+
+.user-info h2 {
+  font-size: 28px;
+}
+
+.user-info span {
+  color: #d8a8ff;
+}
+
+/* CARD PONTOS */
+
+.points-card {
+  margin: 30px;
+  padding: 25px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  text-align: center;
+}
+
+.points-card p {
+  color: #d8a8ff;
+}
+
+.points-card h1 {
+  font-size: 42px;
+  color: #a855f7;
+}
+
+/* STATS */
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 28px;
+  color: #a855f7;
+}
+
+/* CONQUISTAS */
+
+.achievements {
+  padding: 20px 30px;
+}
+
+.achievement-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.achievement-icons img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  padding: 8px;
+}
+
+/* MENU */
+
+.menu {
+  margin: 30px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+}
+
+.menu-item {
+  padding: 26px 20px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.menu-item:hover {
+  background: rgba(168, 85, 247, 0.2);
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+}
+
+.logout {
+  color: #ff4d6d;
+}

@@ -101,13 +101,4 @@
   opacity: 0.85;
 }
 
-/* CADASTRO */
-.login-register {
-  font-size: 12px;
-  color: #9fdcff;
-}
 
-.login-register span {
-  color: #4cc9f0;
-  cursor: pointer;
-}

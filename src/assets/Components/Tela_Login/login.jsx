@@ -1,9 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./login.css";
 
-import logo from "../../icons/icon_Osg.png" // use sua logo real
+import logo from "../../icons/icon_Osg.png";
 
 export const Tela_login = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // aqui depois você pode validar login
+    navigate("/home");
+  };
+
   return (
     <div className="login-container">
       <div className="login-card">
@@ -30,13 +38,10 @@ export const Tela_login = () => {
             <a href="#">Esqueceu sua senha?</a>
           </div>
 
-          <button className="login-btn">
+          <button className="login-btn" onClick={handleLogin}>
             Entrar
           </button>
 
-          <p className="login-register">
-            Não tem conta? <span>Cadastre-se</span>
-          </p>
         </div>
 
       </div>

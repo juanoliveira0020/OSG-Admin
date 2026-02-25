@@ -15,7 +15,7 @@
   padding: 14px;
   border-radius: 20px;
   border: none;
-  background: linear-gradient(90deg, #5e148f, #350053);
+   background: radial-gradient(circle at top, #2a0d3f, #12051c);
   color: white;
   text-align: center;
 }

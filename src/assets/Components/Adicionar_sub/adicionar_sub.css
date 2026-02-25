@@ -19,7 +19,7 @@ html, body, #root {
 /* HEADER */
 .admin-header {
   height: 60px;
-  background: #2b0f3f;
+    background: rgba(43, 15, 63, 0.75);
   display: flex;
   align-items: center;
   justify-content: space-between;

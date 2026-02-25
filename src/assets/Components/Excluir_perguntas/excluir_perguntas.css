@@ -26,7 +26,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
-  background: #2b143f;
+   background: rgba(43, 15, 63, 0.75);
 }
 
 .admin-header h1 {

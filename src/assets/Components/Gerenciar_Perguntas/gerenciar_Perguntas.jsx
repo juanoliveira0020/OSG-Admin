@@ -2,33 +2,40 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./gerenciar_Perguntas.css";
 
-import addPerg from "../../icons/usericon.png";
-import editPerg from "../../icons/usericon.png";
-import removePerg from "../../icons/usericon.png";
+import addPerg from "../../icons/icon_adicionarPergunta.png";
+import editPerg from "../../icons/icon_editarPergunta.png";
+import removePerg from "../../icons/icon_excluirPergunta.png";
 
 export const GerenciarPerguntas = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="admin-container">
+    <div className="page">
 
-      {/* TOPO */}
-      <header className="admin-header">
-        <h1>Online study group</h1>
+      {/* HEADER PADRÃO DO SISTEMA */}
+      <header className="header">
+        <div
+          className="logo"
+          onClick={() => navigate("/home")}
+        >
+          Online study group
+        </div>
 
-        <div className="admin-search">
+        <div className="header-search">
           <input type="text" placeholder="Pesquisar..." />
         </div>
 
-        <div className="admin-user">
-          <span>👤</span>
+        <div
+          className="profile-icon"
+          onClick={() => navigate("/perfil")}
+        >
+          👤
         </div>
       </header>
 
       {/* CONTEÚDO */}
-      <main className="admin-content perguntas-page">
-
-        <h2 className="perguntas-title">Gerenciar Perguntas</h2>
+      <main className="perguntas-page">
+        <h1 className="perguntas-title">Gerenciar Perguntas</h1>
 
         <div className="perguntas-actions">
 
@@ -42,7 +49,7 @@ export const GerenciarPerguntas = () => {
 
           <div
             className="perguntas-card"
-            onClick={() => navigate("/editar-pergunta")}
+            onClick={() => navigate("/editar-perguntas")}
           >
             <img src={editPerg} alt="" />
             <span>Editar Perguntas</span>
@@ -50,14 +57,13 @@ export const GerenciarPerguntas = () => {
 
           <div
             className="perguntas-card"
-            onClick={() => navigate("/remover-pergunta")}
+            onClick={() => navigate("/remover-perguntas")}
           >
             <img src={removePerg} alt="" />
             <span>Remover Perguntas</span>
           </div>
 
         </div>
-
       </main>
 
     </div>

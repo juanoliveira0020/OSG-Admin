@@ -23,7 +23,12 @@ export const Home = () => {
           <input type="text" placeholder="Pesquisar..." />
         </div>
 
-        <div className="admin-user">
+        {/* PERFIL */}
+        <div
+          className="admin-user"
+          onClick={() => navigate("/perfil")}
+          style={{ cursor: "pointer" }}
+        >
           <span>👤</span>
         </div>
       </header>
@@ -41,27 +46,47 @@ export const Home = () => {
 
         <div className="admin-actions">
 
-          <div className="admin-action" onClick={() => navigate("/monitorar")}>
+          {/* MONITORAR */}
+          <div
+            className="admin-action"
+            onClick={() => navigate("/visualizar-mensagens")}
+          >
             <img src={monitor} alt="" />
             <span>Monitorar Conversas</span>
           </div>
 
-          <div className="admin-action" onClick={() => navigate("/perguntas")}>
+          {/* PERGUNTAS */}
+          <div
+            className="admin-action"
+            onClick={() => navigate("/gerenciar-perguntas")}
+          >
             <img src={perguntas} alt="" />
             <span>Gerenciar Perguntas</span>
           </div>
 
-          <div className="admin-action" onClick={() => navigate("/materiais")}>
+          {/* MATERIAIS */}
+          <div
+            className="admin-action"
+            onClick={() => navigate("/gerenciar-materiais")}
+          >
             <img src={materiais} alt="" />
             <span>Gerenciar Materiais</span>
           </div>
 
-          <div className="admin-action danger" onClick={() => navigate("/banir")}>
+          {/* BANIR */}
+          <div
+            className="admin-action danger"
+            onClick={() => navigate("/banir-usuario")}
+          >
             <img src={banir} alt="" />
             <span>Banir Usuários</span>
           </div>
 
-          <div className="admin-action" onClick={() => navigate("/novo-admin")}>
+          {/* NOVO ADMIN */}
+          <div
+            className="admin-action"
+            onClick={() => navigate("/adicionar-admin")}
+          >
             <img src={admin} alt="" />
             <span>Adicionar Novo Administrador</span>
           </div>

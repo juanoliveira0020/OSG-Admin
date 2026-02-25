@@ -10,39 +10,46 @@ export const GerenciarMateriais = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="admin-container">
+    <div className="page">
 
-      {/* TOPO */}
-      <header className="admin-header">
-        <h1>Online study group</h1>
+      {/* HEADER PADRÃO */}
+      <header className="header">
+        <div
+          className="logo"
+          onClick={() => navigate("/home")}
+        >
+          Online study group
+        </div>
 
-        <div className="admin-search">
+        <div className="header-search">
           <input type="text" placeholder="Pesquisar..." />
         </div>
 
-        <div className="admin-user">
-          <span>👤</span>
+        <div
+          className="profile-icon"
+          onClick={() => navigate("/perfil")}
+        >
+          👤
         </div>
       </header>
 
       {/* CONTEÚDO */}
-      <main className="admin-content materiais-page">
-
-        <h2 className="materiais-title">Gerenciar Materiais</h2>
+      <main className="materiais-page">
+        <h1 className="materiais-title">Gerenciar Materiais</h1>
 
         <div className="materiais-actions">
 
           <div
             className="materiais-card"
-            onClick={() => navigate("/adicionar-material")}
+            onClick={() => navigate("/adicionar-materia")}
           >
             <img src={addMat} alt="" />
-            <span>Adicionar Materiais</span>
+            <span>Adicionar Materias</span>
           </div>
 
           <div
             className="materiais-card"
-            onClick={() => navigate("/adicionar-submaterial")}
+            onClick={() => navigate("/Adicionar_sub")}
           >
             <img src={addSub} alt="" />
             <span>Adicionar Submaterias</span>
@@ -50,16 +57,14 @@ export const GerenciarMateriais = () => {
 
           <div
             className="materiais-card"
-            onClick={() => navigate("/remover-material")}
+            onClick={() => navigate("/remover-materias")}
           >
             <img src={removeMat} alt="" />
-            <span>Remover Materiais</span>
+            <span>Remover Materias</span>
           </div>
 
         </div>
-
       </main>
-
     </div>
   );
 };
