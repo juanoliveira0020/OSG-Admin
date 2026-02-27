@@ -1,4 +1,3 @@
-/* RESET + TELA CHEIA */
 html, body, #root {
   width: 100%;
   height: 100%;
@@ -6,7 +5,7 @@ html, body, #root {
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* FUNDO */
+
 .admin-container {
   width: 100vw;
   height: 100vh;
@@ -16,7 +15,6 @@ html, body, #root {
   color: #fff;
 }
 
-/* HEADER */
 .admin-header {
   height: 60px;
    background: rgba(43, 15, 63, 0.75);
@@ -53,7 +51,6 @@ html, body, #root {
   justify-content: center;
 }
 
-/* CONTEÚDO */
 .admin-content {
   flex: 1;
   display: flex;
@@ -62,14 +59,12 @@ html, body, #root {
   padding-top: 32px;
 }
 
-/* TÍTULO */
 .add-pergunta-title {
   font-size: 45px;
   color: #a44bff;
   margin-bottom: 20px;
 }
 
-/* SELECTS */
 .select-box {
   width: 340px;
   height: 44px;
@@ -89,7 +84,6 @@ html, body, #root {
   width: 260px;
 }
 
-/* CARD PERGUNTA */
 .pergunta-card {
   width: 550px;
   background: #4a256a;
@@ -107,7 +101,6 @@ html, body, #root {
   color: #fff;
 }
 
-/* TEXTAREA */
 .pergunta-card textarea {
   width: 100%;
   height: 100px;
@@ -121,7 +114,6 @@ html, body, #root {
   font-size: 20px;
 }
 
-/* ALTERNATIVAS */
 .alternativas {
   width: 100%;
   display: flex;
@@ -150,7 +142,6 @@ html, body, #root {
   background: #9609b9;
 }
 
-/* BOTÃO */
 .confirm-btn {
   width: 220px;
   height: 34px;

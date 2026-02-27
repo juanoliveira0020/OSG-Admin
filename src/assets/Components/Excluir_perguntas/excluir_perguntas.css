@@ -3,7 +3,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* ALTURA TOTAL */
 html,
 body {
   width: 100%;
@@ -11,7 +10,6 @@ body {
   margin: 0;
 }
 
-/* CONTAINER */
 .admin-container {
   min-height: 100vh;
   display: flex;
@@ -20,7 +18,6 @@ body {
   color: white;
 }
 
-/* HEADER */
 .admin-header {
   display: flex;
   align-items: center;
@@ -46,16 +43,14 @@ body {
   font-size: 22px;
 }
 
-/* CONTENT */
 .admin-content {
-  flex: 1; /* 🔥 ISSO resolve o problema */
+  flex: 1; 
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding-top: 40px;
 }
 
-/* CARD */
 .remover-card {
   background: linear-gradient(180deg, #3b1a57, #2a123f);
   padding: 35px;
@@ -63,14 +58,12 @@ body {
   border-radius: 20px;
 }
 
-/* TITLE */
 .remover-title {
   text-align: center;
   color: #a855f7;
   margin-bottom: 25px;
 }
 
-/* SELECTS */
 .remover-select {
   width: 100%;
   padding: 12px;
@@ -81,14 +74,12 @@ body {
   color: white;
 }
 
-/* SUBTITLE */
 .remover-subtitle {
   font-size: 14px;
   margin-bottom: 10px;
   opacity: 0.9;
 }
 
-/* LISTA */
 .remover-list {
   display: flex;
   flex-direction: column;
@@ -111,7 +102,6 @@ body {
   color: white;
 }
 
-/* BOTÃO */
 .remover-btn {
   width: 100%;
   padding: 14px;

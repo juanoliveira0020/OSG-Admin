@@ -3,15 +3,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* PAGE */
-
 .page {
   background: radial-gradient(circle at top, #2a0d3f, #12051c);
   min-height: 100vh;
   color: white;
 }
-
-/* HEADER */
 
 .header {
   height: 65px;
@@ -58,8 +54,6 @@ body {
   font-size: 18px;
 }
 
-/* MAIN */
-
 .main {
   padding: 50px;
   text-align: center;
@@ -71,8 +65,6 @@ body {
   margin-bottom: 30px;
 }
 
-/* INFO BOX */
-
 .info-box {
   background: #3f2b4e;
   padding: 20px;
@@ -82,8 +74,6 @@ body {
   margin-bottom: 25px;
   font-size: 18px;
 }
-
-/* SEARCH ID */
 
 .search-id {
   display: flex;
@@ -110,8 +100,6 @@ body {
   color: white;
 }
 
-/* USER CARD */
-
 .user-card {
   width: 420px;
   margin: auto;
@@ -133,15 +121,11 @@ body {
   text-align: left;
 }
 
-/* SUBTITLE */
-
 .subtitle {
   margin-top: 40px;
   color: #b42bff;
   font-size: 22px;
 }
-
-/* DM BOX */
 
 .dm-box {
   width: 420px;

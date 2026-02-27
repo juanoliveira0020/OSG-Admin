@@ -3,15 +3,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* PAGE */
-
 .page {
   background: #2c0f3a;
   min-height: 100vh;
   color: white;
 }
-
-/* HEADER PADRÃO */
 
 .header {
   height: 65px;
@@ -60,8 +56,6 @@ body {
   cursor: pointer;
 }
 
-/* PAGE CONTENT */
-
 .perguntas-page {
   padding: 60px;
   text-align: center;
@@ -72,8 +66,6 @@ body {
   font-size: 40px;
   margin-bottom: 50px;
 }
-
-/* CARDS */
 
 .perguntas-actions {
   display: flex;

@@ -8,7 +8,6 @@ export const Tela_login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // aqui depois você pode validar login
     navigate("/home");
   };
 
