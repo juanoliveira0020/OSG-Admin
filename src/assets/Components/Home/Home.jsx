@@ -7,7 +7,6 @@ import monitor from "../../icons/icon_monitoramento.png";
 import perguntas from "../../icons/icon_adicionarPergunta.png";
 import materiais from "../../icons/icon_adicionarSub.png";
 import banir from "../../icons/icon_monitoramento.png";
-import admin from "../../icons/icon_novoAdm.png";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -82,14 +81,6 @@ export const Home = () => {
             <span>Banir Usuários</span>
           </div>
 
-          {/* NOVO ADMIN */}
-          <div
-            className="admin-action"
-            onClick={() => navigate("/adicionar-admin")}
-          >
-            <img src={admin} alt="" />
-            <span>Adicionar Novo Administrador</span>
-          </div>
 
         </div>
       </main>

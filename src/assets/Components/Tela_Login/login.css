@@ -66,16 +66,6 @@
   color: #9fdcff;
 }
 
-.login-links {
-  text-align: right;
-}
-
-.login-links a {
-  font-size: 12px;
-  color: #4cc9f0;
-  text-decoration: none;
-}
-
 .login-btn {
   height: 42px;
   width: 120px;
